@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Carousel Effects</title>
+    <style>
+        li {
+            color: black;
+            font: bold 18px sans-serif;
+            background-color: wheat;
+
+        }
+
+        li:hover {
+            background: #EAB126;
+            -webkit-transition: background 3s;
+            /* For Safari */
+            transition: background 4s;
+            /* For modern browsers */
+        }
+
+        li a:focus {
+            background-color: #EAB126
+        }
+
+        .circle 
+        {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+            background: purple;
+            border: 3px solid #000;
+            color: #fff;
+            text-align: center;
+            font: 28px arial, sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" ">
+
+        <div class=" container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item" onclick="abc()">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 5</a>
+            </li>
+        </ul>
+        </div>
+
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/scenery-2.jpg" alt="scenery-2" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/210801.jpg" alt="scenery-1" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/scenery-3.jpg" alt="scenery-3" class="d-block" style="width:100%">
+        </div>
+        
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br><br>
+    <div class="row" style="align-items: 100%;">
+        <div class="col-lg-3" style="border: groove;">
+            <p class="circle">01</p>
+            <h3>trending courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur?</p>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3" style="border: groove;">
+            <p class="circle">02</p>
+            <h3>books&library</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nostrum voluptates tempore, pariatur nobis
+                tempora repellendus deserunt suscipit, sed ex nihil eum impedit maiores quia modi qui aut velit
+                veritatis quam deleniti? Quasi dolor, asperiores ut cumque laboriosam accusamus eveniet esse. Officiis
+                quidem perferendis qui.</p>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3" style="border: groove;">
+            <p class="circle">03</p>
+            <h3>certified teachers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
